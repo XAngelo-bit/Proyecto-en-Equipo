@@ -28,5 +28,24 @@ namespace Tarea_3._
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void SalirDelProgramaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
+		void SalirToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form1 menu = new Form1();
+			menu.Show();
+			this.Close();
+		}
+		
+		void LimpiarCamposToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			textBox1.Text="";			
+			textBox2.Text="";
+			textBox3.Text="";
+		}
 	}
 }

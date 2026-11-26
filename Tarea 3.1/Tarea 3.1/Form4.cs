@@ -28,5 +28,13 @@ namespace Tarea_3._
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			string palabra = textBox1.Text;
+         	char[] letras = palabra.ToCharArray();
+         	Array.Reverse(letras);
+         	textBox2.Text = new string(letras);			
+		}
 	}
 }

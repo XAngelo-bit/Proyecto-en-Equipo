@@ -36,12 +36,84 @@ namespace Tarea_3._
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox1.Location = new System.Drawing.Point(306, 13);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(256, 240);
+			this.pictureBox1.TabIndex = 0;
+			this.pictureBox1.TabStop = false;
+			// 
+			// label2
+			// 
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(25, 82);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(241, 32);
+			this.label2.TabIndex = 3;
+			this.label2.Text = "Hecho por:";
+			// 
+			// label1
+			// 
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.Font = new System.Drawing.Font("MV Boli", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(25, 9);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(261, 73);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "Gracias por usar el Programa!";
+			// 
+			// label3
+			// 
+			this.label3.BackColor = System.Drawing.Color.Transparent;
+			this.label3.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(25, 114);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(241, 139);
+			this.label3.TabIndex = 4;
+			this.label3.Text = "Angel Guillermo, Gabriela Villalobos, Sergio Leonardo y Angel Osmar";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(25, 229);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 5;
+			this.button1.Text = "Salir";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// Form6
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "Form6";
+			this.ClientSize = new System.Drawing.Size(574, 268);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.pictureBox1);
 			this.Name = "Form6";
+			this.Text = "Form6";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }

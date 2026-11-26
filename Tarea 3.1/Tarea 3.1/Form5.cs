@@ -47,5 +47,34 @@ namespace Tarea_3._
 			textBox2.Text="";
 			textBox3.Text="";
 		}
+		
+		void CalcularToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			string palabra;
+            palabra = textBox1.Text;
+             
+            string VowelList = "aeiouáéíóúü";
+            string ConsonantList  = "bcdfghjklmnñpqrstvwxyz";
+         
+            int vowels = 0;
+            int consonant = 0;
+     
+            foreach (char letra in palabra.ToLower())
+            {
+                {
+                    if (VowelList.IndexOf(letra) >= 0)
+                    {
+                    	vowels++;
+                    }
+                    else if (ConsonantList.IndexOf(letra) >= 0)
+                    {
+                    	consonant++;
+                    }
+                }
+            }
+            
+            textBox2.Text=vowels.ToString();
+            textBox3.Text=consonant.ToString();
+		}
 	}
 }

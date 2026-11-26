@@ -71,6 +71,7 @@ namespace Tarea_3._
 			this.calcularToolStripMenuItem.Name = "calcularToolStripMenuItem";
 			this.calcularToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
 			this.calcularToolStripMenuItem.Text = "Calcular";
+			this.calcularToolStripMenuItem.Click += new System.EventHandler(this.CalcularToolStripMenuItemClick);
 			// 
 			// limpiarCamposToolStripMenuItem
 			// 
